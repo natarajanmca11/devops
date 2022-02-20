@@ -2,14 +2,14 @@
 <rss version="2.0">
     <channel>
         <title>DevOps Blog</title>
-        <link>https://your-docusaurus-test-site.com/blog</link>
+        <link>https://your-docusaurus-test-site.com/devops/blog</link>
         <description>DevOps Blog</description>
         <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Welcome]]></title>
-            <link>https://your-docusaurus-test-site.com/blog/welcome</link>
+            <link>https://your-docusaurus-test-site.com/devops/blog/welcome</link>
             <guid>welcome</guid>
             <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
             <category>devops</category>

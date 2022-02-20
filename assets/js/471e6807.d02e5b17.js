@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[650],{2982:function(e){e.exports=JSON.parse('{"name":"azure","permalink":"/devops/docs/tags/azure","docs":[{"id":"cloud/azure","title":"Microsoft Azure","description":"Install Azure Cli","permalink":"/devops/docs/cloud/azure"}],"allTagsPath":"/devops/docs/tags"}')}}]);
