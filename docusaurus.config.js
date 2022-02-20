@@ -14,7 +14,7 @@ const config = {
   title: 'DevOps',
   tagline: 'Self learning',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: '/devops/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw', //throw, warn
   favicon: 'img/favicon.ico',
