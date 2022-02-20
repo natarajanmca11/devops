@@ -29,12 +29,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/natarajanmca11/devops/',
+            'https://github.com/natarajanmca11/devops/blob/main/',
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/natarajanmca11/devops/',
+            'https://github.com/natarajanmca11/devops/blob/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
