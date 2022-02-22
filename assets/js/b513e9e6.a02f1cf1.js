@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[526],{4932:function(s){s.exports=JSON.parse('{"name":"aws","permalink":"/devops/docs/tags/aws","docs":[{"id":"cloud/aws","title":"Amazon Web Srvice (AWS)","description":"Install AWS Cli","permalink":"/devops/docs/cloud/aws"}],"allTagsPath":"/devops/docs/tags"}')}}]);

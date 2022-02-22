@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[3998],{2278:function(o){o.exports=JSON.parse('{"name":"python","permalink":"/devops/docs/tags/python","docs":[{"id":"program-language/python","title":"Python","description":"","permalink":"/devops/docs/program-language/python"}],"allTagsPath":"/devops/docs/tags"}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[121],{8070:function(e){e.exports=JSON.parse('[{"name":"aws","permalink":"/devops/docs/tags/aws","count":1},{"name":"azure","permalink":"/devops/docs/tags/azure","count":1}]')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[5959],{3035:function(s){s.exports=JSON.parse('{"allTagsPath":"/devops/blog/tags","slug":"/devops/blog/tags/devops","name":"devops","count":1,"permalink":"/devops/blog/tags/devops"}')}}]);
