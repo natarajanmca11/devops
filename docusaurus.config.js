@@ -15,8 +15,8 @@ const config = {
   tagline: 'Self learning',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/devops/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw', //throw, warn
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn', //throw, warn
   favicon: 'img/favicon.ico',
   organizationName: 'Natarajan Ganapathi', // Usually your GitHub org/user name.
   projectName: 'devops', // Usually your repo name.
