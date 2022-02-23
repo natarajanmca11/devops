@@ -8,7 +8,7 @@ sidebar_position: 1
 
 # Ansible
 
-## Setup Ansible Controle plane
+## Setup Ansible Controle panel
 
 ### Install Ansible in Ubutu
 
@@ -18,25 +18,61 @@ TODO:
 
 ## Establish Connecton 
 
-### Windows (winrm)
+### Target Windows (winrm)
 
-1. Open the port 5985 for HTTP and 5986 for HTTPS in the target Windows OS firewall and Cloud provider's `Security Group / Networking`.
+1. Check whether WinRM service is running. `winrm quickconfig`
+2. Create HTTPS listener
 
-2. Install the `OpenSSH Server` in target OS
+```shell title="Run the bleow Powershell commands in Administrator mode"
+  # List listeners
+  WinRM e winrm/config/listener
 
-3. Run the `OpenSSH Server` service in the target OS
+  # Generate self signed certificate
+  New-SelfSignedCertificate -DnsName "<YOUR_DNS_NAME>" -CertStoreLocation Cert:\LocalMachine\My
 
-:::tip
- To Allow Unencrypted Password, run the following command (Not Recomended)
+  # Create HTTPS Listeners
+  winrm create winrm/config/Listener?Address=*+Transport=HTTPS '@{Hostname="<YOUR_DNS_NAME>"; CertificateThumbprint="<COPIED_CERTIFICATE_THUMBPRINT>"}'
+```
+3. Add firewall exception
+
+:::info Open the port `5985` for `HTTP` and `5986` for `HTTPS` (recomended) in the target `Windows OS` firewall and Cloud provider's `Security Group / Networking`.
+:::info
+
+4. Validate HTTPS listener `WinRM e winrm/config/listener`
+
+5. Verify you can connect to the machine via HTTPS
+
+```shell title="Run the bleow Powershell commands in Administrator mode"
+$hostName="<DNS_NAME>" # example: "mission.westus.cloudapp.azure.com"
+$winrmPort = "5986"
+
+# Get the credentials of the machine
+$cred = Get-Credential
+
+# Connect to the machine
+$soptions = New-PSSessionOption -SkipCACheck
+Enter-PSSession -ComputerName $hostName -Port $winrmPort -Credential $cred -SessionOption $soptions -UseSSL
+```
+
+:::tip To Allow Unencrypted Password, run the following command (Not Recomended)
     
     Set-Item -Path WSMan:\localhost\Service\Auth\Basic -Value $true
     winrm set winrm/config/service '@{AllowUnencrypted="true"}'
 
 :::
 
-4. connect using `ssh username@hostname`. Ex. `ssh admin@192.168.0.1` (or) `ssh -i key.pem username@hostname`
+:::info Reference
+1. [WinRm Https](https://visualstuiogeeks.com/devops/how-to-configure-winrm-for-https-manually)
+:::info
 
-### Ubuntu (SSH)
+### Target Ubuntu (SSH)
+
+1. Install the `OpenSSH Server` in target OS
+
+2. Run the `OpenSSH Server` service in the target OS
+
+3. connect using `ssh username@hostname`. Ex. `ssh admin@192.168.0.1` (or) `ssh -i key.pem username@hostname`
+
 
 TODO:
 
