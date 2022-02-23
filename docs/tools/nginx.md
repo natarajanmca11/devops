@@ -68,6 +68,17 @@ http {
     }
 }
 ```
+:::tip
+
+Http to Https redirection
+
+    server {
+        listen 80;
+        server_name {{SUBDOMAIN}}.mission.io;
+        return 301 https://{{SUBDOMAIN}}.mission.io$request_uri;
+    }
+:::
+
 
 ### HTTPS Proxy Server Sample Configuration
 
