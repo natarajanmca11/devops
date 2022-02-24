@@ -62,7 +62,7 @@ Enter-PSSession -ComputerName $hostName -Port $winrmPort -Credential $cred -Sess
 :::tip
 
 :::info Reference
-1. [WinRm Https](https://visualstuiogeeks.com/devops/how-to-configure-winrm-for-https-manually)
+1. [WinRm Https](https://www.visualstudiogeeks.com/devops/how-to-configure-winrm-for-https-manually)
 :::info
 
 ### Target Ubuntu (SSH)
