@@ -155,14 +155,20 @@ Deploy the static web application (html/css) in NGINX Web Server
       start_mode: auto
       state: started
 
-  # - name: FirewallD rules
-  #   firewalld:
-  #     permanent: true
-  #     service: "{{ item }}"
-  #     state: enabled
-  #   with_items:
-  #     - http
-  #     - https
+  # https://docs.ansible.com/ansible/2.5/modules/win_firewall_rule_module.html
+  - name: Firewall rules
+    win_firewall_rule:
+      name: "{{ item.name }}"
+      localport: {{ item.port }}
+      action: allow
+      direction: in
+      protocol: tcp
+      state: present
+      enabled: yes
+    with_items:
+      - {name: HTTP, port: 80}
+      - {name: HTTPS, port: 443}
+      - {name: WINRM-HTTPS, port: 5986}
 
   # Deploy the Angular Application
 
@@ -281,14 +287,20 @@ Deploy the static web application (html/css) in NGINX Web Server
       start_mode: auto
       state: started
 
-  # - name: FirewallD rules
-  #   firewalld:
-  #     permanent: true
-  #     service: "{{ item }}"
-  #     state: enabled
-  #   with_items:
-  #     - http
-  #     - https
+  # https://docs.ansible.com/ansible/2.5/modules/win_firewall_rule_module.html
+  - name: Firewall rules
+    win_firewall_rule:
+      name: "{{ item.name }}"
+      localport: {{ item.port }}
+      action: allow
+      direction: in
+      protocol: tcp
+      state: present
+      enabled: yes
+    with_items:
+      - {name: HTTP, port: 80}
+      - {name: HTTPS, port: 443}
+      - {name: WINRM-HTTPS, port: 5986}
 
   # REST API Deployment
 
@@ -338,6 +350,14 @@ Deploy the static web application (html/css) in NGINX Web Server
   #     name: jdk8
   #     state: present
   #     version: 8.0.191
+
+  # https://community.chocolatey.org/packages/openjdk8#ansible
+  - name: Install openjdk8
+    win_chocolatey:
+      name: openjdk8
+      version: '8.312.07'
+      source: https://community.chocolatey.org/api/v2/
+      state: present
 
   - name: Set Java_home
     win_environment:
