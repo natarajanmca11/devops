@@ -59,7 +59,7 @@ Enter-PSSession -ComputerName $hostName -Port $winrmPort -Credential $cred -Sess
     Set-Item -Path WSMan:\localhost\Service\Auth\Basic -Value $true
     winrm set winrm/config/service '@{AllowUnencrypted="true"}'
 
-:::
+:::tip
 
 :::info Reference
 1. [WinRm Https](https://visualstuiogeeks.com/devops/how-to-configure-winrm-for-https-manually)
@@ -405,3 +405,7 @@ Deploy the static web application (html/css) in NGINX Web Server
   #   delay: 5
 ```
 
+:::info Reference
+1. [Ansible with Terraform for configuration management](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-with-terraform-for-configuration-management)
+
+:::info
