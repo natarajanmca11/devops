@@ -10,7 +10,7 @@ sidebar_position: 4
 
 1. [Azure](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 2. [AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-3. [GCP]()
+3. [GCP](https://www.google.com/)
 
 
 ## Folder structure of terrafrom project
@@ -164,5 +164,7 @@ terraform {
 1. [Terraform Workspace Tutorial](https://www.terraform.io/language/state/workspaces)
 
 2. [IAC with Terraform for Mulitiple Environments](https://meirg.co.il/2020/12/10/infrastructure-as-code-with-terraform-for-multiple-environments/)
+
+3. [Terraform wiht Ansible](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-with-terraform-for-configuration-management)
 
 :::tip
