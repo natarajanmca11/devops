@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[7524],{4122:function(o){o.exports=JSON.parse('{"name":"terraform","permalink":"/devops/docs/tags/terraform","docs":[{"id":"tools/terraform","title":"Terraform","description":"Terraform Workspace Tutorial","permalink":"/devops/docs/tools/terraform"}],"allTagsPath":"/devops/docs/tags"}')}}]);
