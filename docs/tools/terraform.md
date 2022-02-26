@@ -2,7 +2,7 @@
 slug: terraform
 title: Terraform
 # authors: [natarajan]
-tags: [terraform]
+tags: [terraform, ansible, azure, aws, gcp]
 sidebar_position: 4
 ---
 
@@ -10,7 +10,7 @@ sidebar_position: 4
 
 1. [Azure](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 2. [AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-3. [GCP](https://www.google.com/)
+3. [GCP](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
 
 
 ## Folder structure of terrafrom project
@@ -128,7 +128,8 @@ terraform {
 ```
 
 :::tip Reference
-1. [Store state in Azure Storage](https://docs.microsoft.com/en-us/azure/developer/terraform/store-state-in-azure-storage?tabs=azure-cli)
+1. [Store state in Azure Storage](https://www.terraform.io/language/settings/backends/azurerm)
+2. [Store state in Azure Storage](https://docs.microsoft.com/en-us/azure/developer/terraform/store-state-in-azure-storage?tabs=azure-cli)
 :::
 
 ## AWS 
@@ -159,12 +160,33 @@ terraform {
 1. [Store state in AWS S3 Bucket](https://www.terraform.io/language/settings/backends/s3)
 :::
 
+## GCP
+
+### Authenticaton setup
+
+### Secure state file in GCS (Google Cloud Storage)
+
+```terraform 
+terraform {
+  backend "gcs" {
+    bucket  = "tf-state-prod"
+    prefix  = "terraform/state"
+  }
+}
+```
+
 :::tip Reference
 
+1. [Store state in GCS](https://www.terraform.io/language/settings/backends/gcs)
+
+:::tip
+
+
+:::tip Terraform Reference
+
 1. [Terraform Workspace Tutorial](https://www.terraform.io/language/state/workspaces)
-
 2. [IAC with Terraform for Mulitiple Environments](https://meirg.co.il/2020/12/10/infrastructure-as-code-with-terraform-for-multiple-environments/)
-
 3. [Terraform wiht Ansible](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-with-terraform-for-configuration-management)
+4. [Terraform Available backends](https://www.terraform.io/language/settings/backends/local)
 
 :::tip
