@@ -6,8 +6,13 @@ tags: [bitbucket, pipeline, bitbucket-pipeline]
 sidebar_position: 1
 ---
 
+## Simple Pipeline yml
 
-## Sample Pipeline ymls
+```yml
+
+```
+
+## Templated based Pipeline yml (for reusalbe)
 
 ```yml
 
