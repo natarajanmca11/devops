@@ -175,7 +175,7 @@ Deploy the static web application (html/css) in NGINX Web Server
   - name: Firewall rules
     win_firewall_rule:
       name: "{{ item.name }}"
-      localport: {{ item.port }}
+      localport: "{{ item.port }}"
       action: allow
       direction: in
       protocol: tcp
@@ -304,7 +304,7 @@ Deploy the static web application (html/css) in NGINX Web Server
   - name: Firewall rules
     win_firewall_rule:
       name: "{{ item.name }}"
-      localport: {{ item.port }}
+      localport: "{{ item.port }}"
       action: allow
       direction: in
       protocol: tcp
