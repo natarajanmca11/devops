@@ -14,6 +14,8 @@ Install Latest version of AWS CLI( > 2.0)
 
 ## Login
 
+### Login in Windows OS
+
 ```shell title=Authenticate AWS Cli
 aws configure set aws_access_key_id "${AWS_ACCESS_KEY_ID}"
 aws configure set aws_secret_access_key "${AWS_SECRET_ACCESS_KEY}"
@@ -22,7 +24,7 @@ aws configure set region "${DEFAULT_REGION_NAME}"
 
 or just run `aws configure` command in console. It will ask althe required values to authenticate.
 
-## Credentials profile
+### Credentials profile
 
 The credentials file uses a different naming format than the AWS CLI config file for named profiles. Do not use the word profile when creating an entry in the credentials file.
 
@@ -40,7 +42,7 @@ aws_secret_access_key=je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY
 
 ```
 
-## Config profile
+### Config profile
 
 ~/.aws/config (Linux & Mac) or %USERPROFILE%\.aws\config (Windows)
 
@@ -54,4 +56,6 @@ region=us-east-1
 output=text
 ```
 
+### Login in Linux / Other OS
 
+TODO
