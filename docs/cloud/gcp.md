@@ -35,11 +35,11 @@ gcloud init --console-only  # `--console-only` flag to prevent the command from 
 
 ### Login using Service Account
 
-```shell
-# Create the service Account ()
-# Open the Service account and navigate to `KEYS` tab and click `AddKey` -> `Create new key` option.
-# Select Json/P12 formate and click create button. It will download `serviceaccount.json` file.
+1. Create the service Account
+2. Open the Service account and navigate to `KEYS` tab and click `AddKey` -> `Create new key` option.
+3. Select `Json`/`P12` formate and click `create` button. It will download `serviceaccount.json` file.
 
+```shell
 # Login
 
 gcloud auth activate-service-account --key-file serviceaccount.json
@@ -48,6 +48,12 @@ gcloud auth activate-service-account --key-file serviceaccount.json
 
 gcloud auth list
 ```
+
+:::tip
+
+Before access any service in GCP, please enable the appropriate API and provide the required permission to service account
+
+:::tip
 
 
 
