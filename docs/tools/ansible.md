@@ -76,6 +76,25 @@ Enter-PSSession -ComputerName $hostName -Port $winrmPort -Credential $cred -Sess
 
 TODO:
 
+## Sample Inventory file
+
+### Target - Windows OS
+```ini
+[GCP]
+43.81.83.173
+
+[GCP:vars]
+ansible_connection=winrm 
+ansible_user=ansibleadmin
+ansible_password=admin@123
+ansible_port=5986
+ansible_winrm_server_cert_validation=ignore
+```
+
+### Target - Linux/Other OS
+
+TODO:
+
 
 ## Angular Application Deployed in NGINX Web Server
 (Controle plane is Ubntu -> Target OS is Windows)
@@ -88,9 +107,6 @@ TODO:
 5. Copy to the target machine
 6. Remove existing deployment
 7. Unzip the file
-
-### Todo Tasks:
-8. Open the port in target machine security firewall
 
 ### Sample playbook file 
 
@@ -220,9 +236,6 @@ Deploy the static web application (html/css) in NGINX Web Server
 
 1. [Install](./nginx.md#nginx-instalation) the NGINX Web Server
 
-### Todo Tasks:
-8. Open the port in target machine security firewall
-9. Java SKD instalation
 ### Sample playbook file
 
 ```yml titiel=playbook.yml
