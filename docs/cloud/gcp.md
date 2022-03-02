@@ -55,6 +55,26 @@ Before access any service in GCP, please enable the appropriate API and provide 
 
 :::tip
 
+## SSH
+
+### Create SSH Keys
+
+1. [Ref](https://cloud.google.com/compute/docs/connect/create-ssh-keys)
+
+Copy the SSH Key from `GCP -> Compute Engine -> Settings -> Metadata -> SSH Keys`. If there no key available, generate new one with the below command.
+
+```shell title="Generate SSH key"
+
+ssh-keygen -t rsa -f ~/.ssh/<ssh-file-name> -C <UserName> -b 2048
+
+```
 
 
 
+```shell title="SSH Login"
+
+ssh -i PATH_TO_PRIVATE_KEY USERNAME@EXTERNAL_IP
+
+```
+
+ssh -i PATH_TO_PRIVATE_KEY USERNAME@35.233.146.46

@@ -6,8 +6,6 @@ tags: [ansible]
 sidebar_position: 1
 ---
 
-# Ansible
-
 ## Setup Ansible Controle panel
 
 ### Install Ansible in Ubutu
