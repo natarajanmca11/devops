@@ -8,11 +8,25 @@ sidebar_position: 1
 
 ## Setup Ansible Controle panel
 
+### Install Ansible in Alpine
+
+```shell
+apk add --update ansible sshpass python3 py3-pip && ln -sf python3 /usr/bin/python
+pip install pywinrm                                   # This is required If target is Windows OS
+ansible-galaxy collection install community.general   # Install if required
+ansible-galaxy collection install ansible.posix       # Install if required
+
+```
+
 ### Install Ansible in Ubutu
 
-### Install Ansible in Windows
-TODO:
-
+```shell
+sudo apt-get update
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install ansible -y
+```
 
 ## Establish Connecton 
 
