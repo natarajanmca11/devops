@@ -7,10 +7,10 @@ sidebar_position: 7
 ---
 
 ### Create SSH Key
-
-1. [Github SSH reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)
-2. [SSH Based Auth](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
-2. [GCP Ref](https://cloud.google.com/compute/docs/connect/create-ssh-keys)
+1. [Youtube SSH Login in Ubuntu](https://www.youtube.com/watch?v=8QGpHQ2SyG8)
+2. [Github SSH reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)
+3. [SSH Based Auth](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
+4. [GCP Ref](https://cloud.google.com/compute/docs/connect/create-ssh-keys)
 
 
 
