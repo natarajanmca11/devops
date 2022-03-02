@@ -1,7 +1,7 @@
 ---
-slug: bitbucket-pipeline
-title: Bitbucket Pipeline
+slug: windows
+title: Windows
 # authors: [natarajan]
-tags: [bitbucket, pipeline, bitbucket-pipeline]
+tags: [windows]
 sidebar_position: 4
 ---
