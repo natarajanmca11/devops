@@ -38,4 +38,9 @@ sudo systemctl status --help    # Help page
 # Firewall and Security Settings
 sudo ufw allow ssh      # Allow SSH ports
 
+# User Add/update
+sudo useradd <username>                     # Add new user without Home directory
+useradd -m -d /PATH/TO/FOLDER <username>    # Add new user with Home directory. -m for Home dir, -d for home dir path
+passwd <username>                           # Set the password for a user
+
 ```

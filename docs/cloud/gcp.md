@@ -59,7 +59,8 @@ Before access any service in GCP, please enable the appropriate API and provide 
 
 ### Create SSH Keys
 
-1. [Ref](https://cloud.google.com/compute/docs/connect/create-ssh-keys)
+1. [Github SSH reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)
+2. [GCP Ref](https://cloud.google.com/compute/docs/connect/create-ssh-keys)
 
 Copy the SSH Key from `GCP -> Compute Engine -> Settings -> Metadata -> SSH Keys`. If there no key available, generate new one with the below command.
 
@@ -68,8 +69,6 @@ Copy the SSH Key from `GCP -> Compute Engine -> Settings -> Metadata -> SSH Keys
 ssh-keygen -t rsa -f ~/.ssh/<ssh-file-name> -C <UserName> -b 2048
 
 ```
-
-
 
 ```shell title="SSH Login"
 
