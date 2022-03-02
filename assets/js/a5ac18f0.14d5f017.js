@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[2372],{2183:function(e){e.exports=JSON.parse('{"name":"debian","permalink":"/devops/docs/tags/debian","docs":[{"id":"operating-system/debian","title":"Debian","description":"Package Manager","permalink":"/devops/docs/operating-system/debian"}],"allTagsPath":"/devops/docs/tags"}')}}]);

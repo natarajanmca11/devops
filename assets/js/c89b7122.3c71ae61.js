@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[1797],{5183:function(e){e.exports=JSON.parse('{"name":"ubuntu","permalink":"/devops/docs/tags/ubuntu","docs":[{"id":"operating-system/ubuntu","title":"Ubuntu","description":"Package Manager","permalink":"/devops/docs/operating-system/ubuntu"}],"allTagsPath":"/devops/docs/tags"}')}}]);

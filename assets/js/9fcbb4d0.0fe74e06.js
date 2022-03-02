@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[691],{4789:function(e){e.exports=JSON.parse('{"name":"alpine","permalink":"/devops/docs/tags/alpine","docs":[{"id":"operating-system/alpine","title":"Alpine","description":"Package Manager","permalink":"/devops/docs/operating-system/alpine"}],"allTagsPath":"/devops/docs/tags"}')}}]);
