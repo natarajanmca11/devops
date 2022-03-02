@@ -457,7 +457,7 @@ Deploy the static web application (html/css) in NGINX Web Server
 
 #### Tasks
 
-### Playbook file
+#### Playbook file
 
 ```yml title="playbook.yml"
 
