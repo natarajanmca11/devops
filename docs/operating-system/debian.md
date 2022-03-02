@@ -42,5 +42,7 @@ sudo ufw allow ssh      # Allow SSH ports
 sudo useradd <username>                     # Add new user without Home directory
 useradd -m -d /PATH/TO/FOLDER <username>    # Add new user with Home directory. -m for Home dir, -d for home dir path
 passwd <username>                           # Set the password for a user
+sudo deluser <username>                     # Remove User
+sudo deluser --remove-home <username>       # Remove user including home directory. 
 
 ```
