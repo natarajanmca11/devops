@@ -107,11 +107,13 @@ ansible_winrm_server_cert_validation=ignore
 
 TODO:
 
+## Sample Playbooks
 
-## Angular Application Deployed in NGINX Web Server
+### Windows: Angular Application Deployed in NGINX Web Server
 (Controle plane is Ubntu -> Target OS is Windows)
 
-### Tasks
+#### Tasks
+
 1. [Install](./nginx.md#nginx-instalation) the NGINX Web Server
 2. Configure the NGINX Web Server by edit/copy the [nginx.conf](./nginx.md#https-web-server-sample-config) file
 3. Run the NGINX as windows service
@@ -120,7 +122,7 @@ TODO:
 6. Remove existing deployment
 7. Unzip the file
 
-### Sample playbook file 
+#### Playbook file 
 
 Deploy the static web application (html/css) in NGINX Web Server 
 
@@ -242,15 +244,15 @@ Deploy the static web application (html/css) in NGINX Web Server
 ```
 
 
-## Spring Bboot Application Deploy as Windows Service In Winsows
+### Windeows: Spring Boot Application Deploy as Windows Service In Winsows
 
-### Tasks
+#### Tasks
 
 1. [Install](./nginx.md#nginx-instalation) the NGINX Web Server
 
-### Sample playbook file
+#### Playbook file
 
-```yml titiel=playbook.yml
+```yml titiel="playbook.yml"
 - hosts: {{HOSTS}}
   remote_user: root
   gather_facts: False
@@ -449,6 +451,97 @@ Deploy the static web application (html/css) in NGINX Web Server
   #   retries: 5
   #   delay: 5
 ```
+
+
+### Debian: Spring Boot Application deploy
+
+#### Tasks
+
+### Playbook file
+
+```yml title="playbook.yml"
+
+- hosts: all
+  remote_user: amazeadmin
+  gather_facts: false
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  become: true
+
+  tasks:
+    - name: Install Prerequisites
+      apt: 
+        name: aptitude 
+        update_cache: yes 
+        state: latest 
+        force_apt_get: yes
+
+  # Sudo Group Setup
+    - name: Make sure we have a 'wheel' group
+      group:
+        name: wheel
+        state: present
+
+    - name: Allow 'wheel' group to have passwordless sudo
+      lineinfile:
+        path: /etc/sudoers
+        state: present
+        regexp: '^%wheel'
+        line: '%wheel ALL=(ALL) NOPASSWD: ALL'
+        validate: '/usr/sbin/visudo -cf %s'
+
+  # User + Key Setup
+    - name: Create a new regular user with sudo privileges
+      user:
+        name: amazeadmin
+        state: present
+        groups: wheel
+        append: true
+        create_home: true
+        shell: /bin/bash
+
+    - name: Set authorized key for remote user
+      authorized_key:
+        user: amazeadmin
+        state: present
+        key: "{{ lookup('file', './amazeadmin.pub') }}"
+        # key: ./amazeadmin.pub
+
+    - name: Disable password authentication for root
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        state: present
+        regexp: '^#?PermitRootLogin'
+        line: 'PermitRootLogin prohibit-password'
+
+  # Install Packages
+    - name: Update apt
+      apt: update_cache=yes
+
+    - name: Install required system packages
+      apt: name=ufw state=latest
+
+ # UFW Setup
+    - name: UFW - Allow SSH connections
+      ufw:
+        rule: allow
+        name: OpenSSH
+
+    - name: UFW - Deny all other incoming traffic by default
+      ufw:
+        state: enabled
+        policy: deny
+        direction: incoming
+
+    - name: Install latest version of "openjdk-11-jdk" ignoring "install-recommends"
+      apt:
+        name: openjdk-11-jdk
+        state: latest
+        install_recommends: no
+
+```
+
+
 
 :::info Reference
 1. [Ansible with Terraform for configuration management](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-with-terraform-for-configuration-management)
