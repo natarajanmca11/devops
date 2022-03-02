@@ -8,8 +8,6 @@ sidebar_position: 3
 
 ## Install Google Cloud Cli
 
-
-
 ### Windows OS
 
 ```shell title="Run in Powershell"
@@ -60,7 +58,7 @@ Before access any service in GCP, please enable the appropriate API and provide 
 Copy the SSH Key from `GCP -> Compute Engine -> Settings -> Metadata -> SSH Keys`. If there no key available, generate new one with the below command and add the public key into SSH Keys.
 
 ```shell title="Generate SSH key"
-
-ssh-keygen -t rsa -f ~/.ssh/<ssh-file-name> -C <UserName> -b 2048
-
+ssh-keygen -t rsa -f ~/.ssh/<ssh-file-name> -C <UserName> -b 2048   # Linux
+ssh-keygen -t rsa -f ./<ssh-file-name> -C <UserName> -b 2048        # Windows
 ```
+
