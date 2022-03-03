@@ -12,6 +12,9 @@ sidebar_position: 2
 apt update
 apt-get update
 
+# Search apt package
+apt-cache search --names-only '^openjdk-8*'
+
 ```
 
 ## Reusable terminal Commands
@@ -55,11 +58,12 @@ lsblk -f                                    # List all disks
 sudo blkid
 sudo mkfs -t ext4 /dev/sdb1                 # Format to EXT4. Run with caution.
 sudo mount /dev/sdb1 /mnt/media             # Mount Disk to OS path
-umount DIRECTORY                            # Unmount Directory
-umount DEVICE_NAME                          # Unmount Device
+sudo umount DIRECTORY                       # Unmount Directory
+sudo umount DEVICE_NAME                     # Unmount Device
 
-# Search apt package
-apt-cache search --names-only '^openjdk-8*'
+# symlink
+sudo rm -f /sbin/mkfs.ntfs                  # Remove symlink
+sudo ln -s /sbin/mkntfs /sbin/mkfs.ntfs     # Create symlink
 
 ```
 :::tip Permanent mount
