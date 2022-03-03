@@ -51,10 +51,21 @@ usermod -aG sudo <username>                 # Add user to sudo group.
 # Get VM Details
 cat /etc/os-release
 [lsblk](https://www.cyberciti.biz/faq/find-hard-disk-hardware-specs-on-linux/)
-blkid
+lsblk -f                                    # List all disks
+sudo blkid
+sudo mkfs -t ext4 /dev/sdb1                 # Format to EXT4. Run with caution.
+sudo mount /dev/sdb1 /mnt/media             # Mount Disk to OS path
+umount DIRECTORY                            # Unmount Directory
+umount DEVICE_NAME                          # Unmount Device
 
 # Search apt package
 apt-cache search --names-only '^openjdk-8*'
 
-
 ```
+:::tip Permanent mount
+
+The following line must be added to the `/etc/fstab` file to automatically the hard disk re-mount after the next restart.
+
+    /dev/sdb     /media/sda3     ntfs    rw              0       0
+
+:::tip
