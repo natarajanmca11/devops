@@ -70,6 +70,6 @@ sudo ln -s /sbin/mkntfs /sbin/mkfs.ntfs     # Create symlink
 
 The following line must be added to the `/etc/fstab` file to automatically the hard disk re-mount after the next restart.
 
-    /dev/sdb     /media/sda3     ntfs    rw              0       0
+    /dev/sdb     /media/sda3     ext4    rw              0       0
 
 :::tip
