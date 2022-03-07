@@ -107,6 +107,10 @@ ansible_winrm_server_cert_validation=ignore
 
 TODO:
 
+### Ansible Vault [Ref](https://docs.ansible.com/ansible/latest/network/getting_started/first_inventory.html)
+
+TODO:
+
 ## Ansible Key Features
 
 ### Lookup
