@@ -107,6 +107,45 @@ ansible_winrm_server_cert_validation=ignore
 
 TODO:
 
+## Ansible Key Features
+
+### Lookup
+
+#### INI Lookup Example
+
+```ini
+[production]
+# My production information
+user=robert
+pass=somerandompassword
+
+[integration]
+# My integration information
+user=gertrude
+pass=anotherpassword
+```
+
+We can use the ini plugin to lookup user configuration:
+
+```js
+- debug: msg="User in integration is {{ lookup('ini', 'user section=integration file=users.ini') }}"
+- debug: msg="User in production  is {{ lookup('ini', 'user section=production  file=users.ini') }}"
+```
+
+#### Java properties Lookup Example
+
+
+```js
+user.name=robert
+user.pass=somerandompassword
+```
+
+You can retrieve the user.name field with the following lookup:
+
+```js
+- debug: msg="user.name is {{ lookup('ini', 'user.name type=properties file=user.properties') }}"
+```
+
 ## Sample Playbooks
 
 ### Windows: Angular Application Deployed in NGINX Web Server
