@@ -17,6 +17,15 @@ sidebar_position: 2
 Please ensure that `443` port is enabled in `VM's firewall` and cloud provider's `security group / Networking`. 
 :::
 
+## NGINX Commands
+
+```shell
+nginx -s stop #fast shutdown
+nginx -s quit #graceful shutdown
+nginx -s reload #changing configuration, starting new worker processes with a new configuration, graceful shutdown of old worker processes
+nginx -s reopen #re-opening log files
+```
+
 ### HTTPS Web Server Sample Config
 
 ```yml title="nginx.conf"
@@ -59,6 +68,7 @@ http {
        }
     }
 
+    # Http to Https URL redirection
     server {
         listen 80;
         server_name {{SUBDOMAIN}}.mission.io;
@@ -126,6 +136,13 @@ http {
             proxy_pass http://127.0.0.1:8081$request_uri;
             client_max_body_size 1000M;
        }
+    }
+    
+    # Http to Https URL redirection
+    server {
+        listen 80;
+        server_name {{SUBDOMAIN}}.mission.io;
+        return 301 https://{{SUBDOMAIN}}.mission.io$request_uri;
     }
 }
 ```
