@@ -11,8 +11,8 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'DevOps',
-  tagline: 'Cloud & DevOps Reference Guide',
+  title: 'Cloud & DevOps',
+  tagline: 'Reference Guide',
   url: 'https://natarajanmca11.github.io',
   baseUrl: '/devops/',
   onBrokenLinks: 'warn',
