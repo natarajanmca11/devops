@@ -12,8 +12,8 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'DevOps',
-  tagline: 'Self learning',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: 'Cloud & DevOps Reference Guide',
+  url: 'https://natarajanmca11.github.io',
   baseUrl: '/devops/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn', //throw, warn
