@@ -3,7 +3,7 @@ slug: ssh
 title: SSH
 # authors: [natarajan]
 tags: [ssh, ansible, azure, aws, gcp]
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 ### Create SSH Key

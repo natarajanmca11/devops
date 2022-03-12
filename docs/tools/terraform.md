@@ -3,7 +3,7 @@ slug: terraform
 title: Terraform
 # authors: [natarajan]
 tags: [terraform, ansible, azure, aws, gcp]
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 Workspace based terraform automation project setup for multi-cloud.
