@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[7074],{5993:function(e){e.exports=JSON.parse('{"name":"kubernetes","permalink":"/devops/docs/tags/kubernetes","docs":[{"id":"tools/kubernetes","title":"Kubernetes","description":"","permalink":"/devops/docs/tools/kubernetes"}],"allTagsPath":"/devops/docs/tags"}')}}]);

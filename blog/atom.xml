@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://your-docusaurus-test-site.com/devops/blog</id>
+    <id>https://natarajanmca11.github.io/devops/blog</id>
     <title>DevOps Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://your-docusaurus-test-site.com/devops/blog"/>
+    <link rel="alternate" href="https://natarajanmca11.github.io/devops/blog"/>
     <subtitle>DevOps Blog</subtitle>
-    <icon>https://your-docusaurus-test-site.com/devops/img/favicon.ico</icon>
+    <icon>https://natarajanmca11.github.io/devops/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>welcome</id>
-        <link href="https://your-docusaurus-test-site.com/devops/blog/welcome"/>
+        <link href="https://natarajanmca11.github.io/devops/blog/welcome"/>
         <updated>2021-08-26T00:00:00.000Z</updated>
         <author>
             <name>Natarajan Ganapathi</name>

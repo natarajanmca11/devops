@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[8199],{1696:function(o){o.exports=JSON.parse('{"name":"container","permalink":"/devops/docs/tags/container","docs":[{"id":"tools/container","title":"Container","description":"Docker","permalink":"/devops/docs/tools/container"}],"allTagsPath":"/devops/docs/tags"}')}}]);

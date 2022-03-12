@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[3802],{9788:function(o){o.exports=JSON.parse('{"name":"spring-boot","permalink":"/devops/docs/tags/spring-boot","docs":[{"id":"frameworks/spring-boot","title":"Spring Boot","description":"","permalink":"/devops/docs/frameworks/spring-boot"}],"allTagsPath":"/devops/docs/tags"}')}}]);

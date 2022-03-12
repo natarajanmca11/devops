@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[3998],{2278:function(e){e.exports=JSON.parse('{"name":"python","permalink":"/devops/docs/tags/python","docs":[{"id":"program-language/python","title":"Python","description":"Deeplearning Setup in Mac","permalink":"/devops/docs/program-language/python"}],"allTagsPath":"/devops/docs/tags"}')}}]);

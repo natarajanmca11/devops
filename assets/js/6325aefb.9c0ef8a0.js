@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[4594],{4886:function(e){e.exports=JSON.parse('{"name":"reactjs","permalink":"/devops/docs/tags/reactjs","docs":[{"id":"frameworks/react","title":"React","description":"","permalink":"/devops/docs/frameworks/react"}],"allTagsPath":"/devops/docs/tags"}')}}]);
