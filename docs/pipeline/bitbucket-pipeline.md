@@ -10,11 +10,50 @@ sidebar_position: 1
 
 ## Bitbucket pipeline Samples
 
-### Simple Pipeline yml
+### Deploy into AWS ECS Cluster
 
 ```yml
+image: python:2.7
 
+pipelines:
+  branches:
+    '{master,develop}':
+      - step:
+          name: Build and Containerize the App
+          services:
+            - docker
+          trigger: manual
+          script:
+            - docker build -t <docker-image-name> .
+  default:
+    - step:
+        name: Build and Containerize the App
+        services:
+          - docker
+        caches:
+          - docker
+        script:
+          - pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic
+          - aws configure set aws_access_key_id "${AWS_ACCESS_KEY_ID}"
+          - aws configure set aws_secret_access_key "${AWS_SECRET_ACCESS_KEY}"
+          - aws configure set region "${DEFAULT_REGION_NAME}"
+          - eval $(aws ecr get-login --no-include-email --region "${DEFAULT_REGION_NAME}")
+          - docker build -t <docker-image-name> .
+          - docker tag <docker-image-name>:latest <aws-ecr-path>/<docker-image-name>:latest
+          - docker push <aws-ecr-path>/<docker-image-name>:latest
+          - aws ecs update-service --cluster <ecs-forgate-cluster-name> --service <ecs-service-name> --task-definition <ecs-task-definition-name[:version]> --force-new-deployment
+definitions:
+  services:
+    docker:
+      memory: 2048
 ```
+:::tip Reference
+
+1. [ECS](https://bitbucket.org/blog/automating-amazon-elastic-container-ecr-container-builds-using-bitbucket-pipelines)
+2. [Use Services & Database](https://confluence.atlassian.com/bitbucket/use-services-and-databases-in-bitbucket-pipelines-874786688.html#UseservicesanddatabasesinBitbucketPipelines-Servicememorylimits)
+3. [Update ECS Service](https://docs.aws.amazon.com/cli/latest/reference/ecs/update-service.html)
+
+:::tip
 
 ### Template based Pipeline yml 1
 
