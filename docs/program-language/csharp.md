@@ -1,10 +1,8 @@
 ---
 slug: csharp
-title: C#
+title: CSharp (C#)
 # authors: [natarajan]
 tags: [C#, csharp]
-sidebar_position: 2
+sidebar_position: 1
 ---
-
-# Java
 

@@ -590,3 +590,6 @@ Deploy the static web application (html/css) in NGINX Web Server
 1. [Ansible with Terraform for configuration management](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-with-terraform-for-configuration-management)
 
 :::info
+
+## Ansible Galaxy (ansible-galaxy)
+

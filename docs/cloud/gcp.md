@@ -23,10 +23,10 @@ sidebar_position: 3
 
 ## Login
 
-### Console Login (Open Browser login window)
+### Console Login
 ```shell
 
-gcloud init 
+gcloud init                 # Login window open in browser
 gcloud init --console-only  # `--console-only` flag to prevent the command from launching a browser-based authorization flow, if required
 
 ```

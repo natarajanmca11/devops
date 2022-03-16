@@ -14,7 +14,6 @@ Workspace based terraform automation project setup for multi-cloud.
 2. [AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 3. [GCP](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
 
-
 ## Folder structure of terrafrom project
 ```shell
 TERRAFORM
@@ -306,5 +305,14 @@ output "addresses" {
 2. [IAC with Terraform for Mulitiple Environments](https://meirg.co.il/2020/12/10/infrastructure-as-code-with-terraform-for-multiple-environments/)
 3. [Terraform wiht Ansible](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-with-terraform-for-configuration-management)
 4. [Terraform Available backends](https://www.terraform.io/language/settings/backends/local)
+
+:::tip
+
+
+## Landing Zone Creation
+
+:::tip Best Practices Reference
+
+1. [AWS](https://registry.terraform.io/modules/MitocGroup/landing-zone/aws/latest)
 
 :::tip
