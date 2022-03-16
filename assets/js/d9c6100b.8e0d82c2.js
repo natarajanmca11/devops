@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[9640],{5910:function(a){a.exports=JSON.parse('{"name":"C#","permalink":"/devops/docs/tags/c","docs":[{"id":"program-language/csharp","title":"CSharp (C#)","description":"","permalink":"/devops/docs/program-language/csharp"}],"allTagsPath":"/devops/docs/tags"}')}}]);
