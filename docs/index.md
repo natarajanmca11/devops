@@ -7,8 +7,23 @@ sidebar_position: 1
 ---
 
 
-## Authentication
+## Identiy Provider
 
 1. [Casbin](https://casbin.org/en/)
 2. [Identity Server 4](https://identityserver4.readthedocs.io/en/latest/)
 3. Keycloak
+
+
+## Cloud & Tools
+
+
+| Name          | Azure                 | AWS       | GCP       | Cloud Agnostic                      |
+| -------       | -----------           |---------  |------     | ------                              |
+| Authentication| Azure AD                                    ||| KeyClock, Casbin,                   |
+|^^             |                       |           |           | IdentityServer 4                    |
+|                               Infrastructure Monitoring                                          ||||
+| Monitoring    | Monitor               |           |           | Promatheus                          |
+|                               Application Monitoring                                             ||||
+| Logging       | Application Insights  |           |           | Promatheus                          |
+| ^^            |                       |           |           | Zipkin                              |
+| -------       | -----------           |---------  |------     | ------                              |
