@@ -44,6 +44,9 @@ sudo apt-get install ansible -y
 
   # Create HTTPS Listeners
   winrm create winrm/config/Listener?Address=*+Transport=HTTPS '@{Hostname="<YOUR_DNS_NAME>"; CertificateThumbprint="<COPIED_CERTIFICATE_THUMBPRINT>"}'
+
+  # Delete Listeners
+  winrm delete winrm/config/Listener?Address=*+Transport=HTTPS
 ```
 3. Add firewall exception
 
