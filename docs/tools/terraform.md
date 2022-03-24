@@ -13,8 +13,10 @@ Workspace based terraform automation project setup for multi-cloud.
 1. [Azure](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 2. [AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 3. [GCP](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
+4. [Rover - Terraform visualizer](https://github.com/im2nguyen/rover)
 
 ## Folder structure of terrafrom project
+
 ```shell
 TERRAFORM
 │   .gitignore
@@ -39,6 +41,7 @@ TERRAFORM
     ├───Uat
     └───Prod
 ```
+
 [Sample files shared below](./terraform.md?sample-terraform-scripts)
 
 > **Note:** `terrafrom.tfvars` is default variable definition file. Custom name is acceptable. but need to spacify the file name in every execution liek `terraform apply var-file=test.env.tfvars`
