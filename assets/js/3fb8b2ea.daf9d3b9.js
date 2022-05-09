@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[3925],{3979:function(e){e.exports=JSON.parse('{"name":"dotnetcore","permalink":"/devops/docs/tags/dotnetcore","docs":[{"id":"frameworks/dotnet","title":"Microsoft Dotnet","description":"Single file","permalink":"/devops/docs/frameworks/dotnet"}],"allTagsPath":"/devops/docs/tags"}')}}]);
