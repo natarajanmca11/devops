@@ -40,7 +40,7 @@ az login --identity --username <client_id|object_id|resource_id>
 
 ## Azure Active Directory
 
-
+App Registration -> [Your App] -> Manage -> Authentication -> Add a Platform => Mobile and desktop applications
 
 ```C#
 using Microsoft.Identity.Client;
