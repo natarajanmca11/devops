@@ -35,3 +35,29 @@ az login --identity --username <client_id|object_id|resource_id>
 
 
 
+
+
+
+## Azure Active Directory
+
+
+
+```C#
+using Microsoft.Identity.Client;
+using static System.Console;
+
+string clientId = "<ApplicationID / ClientID>";
+
+var app = PublicClientApplicationBuilder
+            .Create(clientId)
+            .WithRedirectUri("http://localhost")
+            .Build();
+
+string[] scopes = { "https://database.windows.net/.default" };
+
+var result = await app
+                .AcquireTokenInteractive(scopes)
+                .ExecuteAsync();
+
+WriteLine(result.AccessToken);
+```
