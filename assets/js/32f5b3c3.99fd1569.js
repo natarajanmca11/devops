@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[8209],{9424:function(s){s.exports=JSON.parse('{"name":"bash","permalink":"/devops/docs/tags/bash","docs":[{"id":"tools/bash","title":"Bash","description":"Docs","permalink":"/devops/docs/tools/bash"}],"allTagsPath":"/devops/docs/tags"}')}}]);
