@@ -95,7 +95,7 @@ do
     echo a is $a b is $b
 done <data_file
 ```
-## FOr Loops
+## For Loops
 
 ```sh
 for <var> in <list>
@@ -106,6 +106,8 @@ done
 ```
 
 :::tip
+
+expression inside `` symbol will execute before the loop begin. Ex.
 
 ```sh
 for num in `seq 1 5`
@@ -150,26 +152,77 @@ read a b <data_file
 (or)
 read a b c d
 seq 1 5
-find . -name *.c
+find . -name '*.c'
 grep txt    # Find text in result
 lsof        # List all port and process names
 sed         # Find and replace
-wc -l <filename> # get line count of the file
+wc -l <filename> # get word/line count of the file
 test        # Evoluate the epxression. ex. test -f myfile (or) test $x -gt 10
             # Alternatives of test is  [[-gt, -lt]] or ((>, <))
 strings 
-ps -ly
-
-
-
+ps [-ly | -el]
+head
+tail
 
 
 ```
 
+#### Tail
+
+```sh
+tail -2 <filename>      # Get last 2 line of the file
+tail -n2 -f <filename>  # Watch/Monitor file changes
+```
+
+#### Sed
+
+`/g` in the pattern `'/s/old/new/g` is repleace all the `old` value with `new` value. Otherwise it will replce the first occarance of each line.
+
+    p -> Print
+    d -> delete
+    G -> Space between line. ex: `sed G f.txt` (or) `sed 'G;G' f.txt`
+    s -> substitute
+    g -> 
+    f -> script file
+    e -> script
+    i -> extention
+
+
+
+```sh
+sed 's/old/new/'; 's/demo/prod/'
+sed -id 's/old/new/g' file1.txt
+sed -d 's/[xX]/Y/' -e 's/b.*n/blue/'
+sed -f sedscript -n sed4    # sed scripts file as input
+date | sed 's/J/j/'
+sed '1,5p'
+
+sed '/alpha/s/beta/gama/'
+sed '/apple/,/orange/d'
+sed '/important/!s/print/throw_away/'
+
+```
+##### File all files with multiple replacements
+
+    find . -type f -name '*.txt' -exec sed -f sedfile {} +
+(or)
+    
+    find . -type f -name '*.txt' -exec sed -f sedfile {} \;
+
+
+#### awk
+
+```sh
+
+```
 
 :::tip
-```sh
-echo $?  # Last process exit status
-file
-```
+
+1. echo $?  # Last process exit status
+
+2. file
+
+3. Add `&` end of the expression will run the bash in background.
+4. 
+
 :::
