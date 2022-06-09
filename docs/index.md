@@ -12,6 +12,7 @@ sidebar_position: 1
 1. [Casbin](https://casbin.org/en/)
 2. [Identity Server 4](https://identityserver4.readthedocs.io/en/latest/)
 3. Keycloak
+4. [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-api)
 
 
 ## Cloud & Tools
