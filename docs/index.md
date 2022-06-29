@@ -28,3 +28,9 @@ sidebar_position: 1
 | Logging       | Application Insights  |           |           | Promatheus                          |
 | ^^            |                       |           |           | Zipkin                              |
 | -------       | -----------           |---------  |------     | ------                              |
+
+
+
+## DevOps
+
+1. [90 Days of DevOps](https://github.com/michaelcade/90daysofdevops)
