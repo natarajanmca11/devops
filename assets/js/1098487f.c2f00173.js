@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[7138],{5770:function(s){s.exports=JSON.parse('{"name":"sonarqube","permalink":"/devops/docs/tags/sonarqube","docs":[{"id":"tools/sonarqube","title":"Sonarqube","description":"","permalink":"/devops/docs/tools/sonarqube"}],"allTagsPath":"/devops/docs/tags"}')}}]);
