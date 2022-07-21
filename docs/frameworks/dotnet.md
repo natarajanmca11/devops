@@ -27,3 +27,4 @@ sidebar_position: 1
 2. OPEN API [swashbuckle](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-6.0&tabs=visual-studio)
 3. Mediator [MediatR](https://github.com/jbogard/MediatR/wiki)
 4. CQRS [CQRS](https://event-driven.io/en/cqrs_is_simpler_than_you_think_with_net6/)
+5. Sample Dotnet Project [Best Practice](https://github.com/cwilby/acme-architecture)
