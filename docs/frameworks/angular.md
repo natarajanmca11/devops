@@ -20,3 +20,6 @@ Set the following environment variable to resolve the javascript heap out of mem
 ```shell
 ENV NODE_OPTIONS=--max_old_space_size=2048
 ```
+
+## Angular Build and Deployment in Gihtub Actions
+

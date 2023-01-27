@@ -6,6 +6,7 @@ tags: [github, github-actions]
 sidebar_position: 2
 ---
 
+## Angular Gihtub Actions to build and Deploy the app [Reference](../frameworks/angular.md#angular-build-and-deployment-in-gihtub-actions)
 
 ## Integrations Reference
 1. [Login to Docker Registry](https://github.com/docker/login-action)
