@@ -14,6 +14,9 @@ sidebar_position: 1
 3. Keycloak
 4. [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-api)
 
+## Identity Broker
+
+1. [Dex](https://github.com/dexidp/dex)
 
 ## Cloud & Tools
 
