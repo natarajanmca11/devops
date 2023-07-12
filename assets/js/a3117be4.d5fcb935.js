@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[2305],{1767:function(e){e.exports=JSON.parse('{"name":"github","permalink":"/devops/docs/tags/github","docs":[{"id":"pipeline/github-actions","title":"Github Actions","description":"Integrations Reference","permalink":"/devops/docs/pipeline/github-actions"}],"allTagsPath":"/devops/docs/tags"}')}}]);
