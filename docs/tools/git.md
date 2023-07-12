@@ -6,16 +6,20 @@ tags: [git]
 sidebar_position: 11
 ---
 
-## Rollback last commit in local git repository
+## Rollback last commit in a local git repository
 
-```sh title="Revert last commit in local git repository"
+```sh title="Revert the last commit in a local git repository"
 git reset HEAD~1
 ```
 
-## Revert last commit from github remote repository
+## Revert the last commit from GitHub remote repository
 
-```sh title="Revert last commit from remote repository"
+```sh title="Revert the last commit from remote repository"
 git checkout <branch-name>
-git reset --hard <commit-hash> (or) git reset --hard HEAD~1
-git push -f origin <branch-name>
+
+# Revert 1 commit from remote
+git push --force origin HEAD~1:<branch-name>
+
 ```
+
+
