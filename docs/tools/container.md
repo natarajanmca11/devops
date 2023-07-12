@@ -12,6 +12,12 @@ sidebar_position: 3
 ## Podman
 
 
+## Commands
+
+```Dockerfile
+HEALTHCHECK CMD curl --fail http://localhost:5000/healthz || exit
+```
+
 ## Dockerfile Samples
 
 ### Dotnet Smaller and Secure Container Image

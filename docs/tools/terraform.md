@@ -46,13 +46,21 @@ TERRAFORM
 
 > **Note:** `terrafrom.tfvars` is default variable definition file. Custom name is acceptable. but need to spacify the file name in every execution liek `terraform apply var-file=test.env.tfvars`
 
+## Init the terraform project
+
+```shell
+
+terraform init (or) terraform init --upgrade
+
+```
+
 ## Terrafrom workspace
 
 ```shell
 # Create workspace
-terrafrom workspace add Test
-terrafrom workspace add Uat
-terrafrom workspace add Prod
+terrafrom workspace new Test
+terrafrom workspace new Uat
+terrafrom workspace new Prod
 
 # Select/Change workspace
 terraform workspace select Test
@@ -63,15 +71,6 @@ terraform workspace list
 # Deelte workspace
 terraform workspace delete Test
 ```
-
-## Init the terraform project
-
-```shell
-
-terraform init (or) terraform init --upgrade
-
-```
-
 ## Plan
 
 ```shell
