@@ -33,3 +33,7 @@ For (global) default email (which is configured in your ~/.gitconfig):
 git config --global user.name "Your Name Here"
 git config --global user.email [email protected]
 ```
+Ask password 
+```sh
+git config credential.helper store
+```
