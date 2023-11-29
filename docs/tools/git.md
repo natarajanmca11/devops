@@ -21,19 +21,19 @@ git checkout <branch-name>
 git push --force origin HEAD~1:<branch-name>
 ```
 
-Set local repo user name and email
+## Set local repo user name and email
 ```sh
-git config user.name "Your Name Here"
+git config user.name "Your Full Name Here"
 git config user.email [email protected]
 ```
 
-For (global) default email (which is configured in your ~/.gitconfig):
+## For (global) default email (which is configured in your ~/.gitconfig):
 
 ```sh
 git config --global user.name "Your Name Here"
 git config --global user.email [email protected]
 ```
-Ask password 
+## Ask password on each time
 ```sh
 git config credential.helper store
 ```
