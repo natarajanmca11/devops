@@ -20,23 +20,31 @@ choco install podman-cli
 
 ## Prerequsites to run the podman
 
-1. Enable Hyper-V
+### 1. Enable Hyper-V (Powershell Script)
 
+#### Verify Hyper-V Is Enabled
 ```ps1
-# Powershell Script
-# Verify Hyper-V Is Enabled
 Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V
-# Enable Hyper-V
+Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
+```
+#### Enable Hyper-V
+```ps1
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 ```
-or Switch to WSL2 Backend (Optional)
+
+#### Disable Hyper-V
+```ps1
+Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
+```
+
+### 2. (or) Switch to WSL2 Backend (Optional)
 
 ```sh
 wsl --install
 podman machine set --engine-option rootless=true
 ```
 
-## Podman start
+## Podman
 
 ```sh
 podman machine ls
