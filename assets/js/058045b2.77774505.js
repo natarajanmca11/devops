@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[8700],{180:function(o){o.exports=JSON.parse('{"name":"ai","permalink":"/devops/docs/tags/ai","docs":[{"id":"AI/copilot","title":"Copilot","description":"Configure Copilot Agent in VS Code","permalink":"/devops/docs/AI/copilot"}],"allTagsPath":"/devops/docs/tags"}')}}]);
