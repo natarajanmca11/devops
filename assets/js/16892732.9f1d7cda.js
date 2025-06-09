@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[5176],{1314:function(e){e.exports=JSON.parse('{"name":"mcp","permalink":"/devops/docs/tags/mcp","docs":[{"id":"AI/mcp","title":"MCP","description":"Reference","permalink":"/devops/docs/AI/mcp"}],"allTagsPath":"/devops/docs/tags"}')}}]);
