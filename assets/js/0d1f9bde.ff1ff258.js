@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[837],{9455:function(a){a.exports=JSON.parse('{"name":"go","permalink":"/devops/docs/tags/go","docs":[{"id":"program-language/go","title":"Go Language","description":"Install Go Language","permalink":"/devops/docs/program-language/go"}],"allTagsPath":"/devops/docs/tags"}')}}]);

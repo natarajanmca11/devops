@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[4092],{3059:function(a){a.exports=JSON.parse('{"name":"zig","permalink":"/devops/docs/tags/zig","docs":[{"id":"program-language/zig","title":"Zig Language","description":"","permalink":"/devops/docs/program-language/zig"}],"allTagsPath":"/devops/docs/tags"}')}}]);

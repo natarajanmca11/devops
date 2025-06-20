@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[3814],{3291:function(e){e.exports=JSON.parse('{"name":"prometheus","permalink":"/devops/docs/tags/prometheus","docs":[{"id":"tools/prometheus","title":"Prometheus","description":"","permalink":"/devops/docs/tools/prometheus"}],"allTagsPath":"/devops/docs/tags"}')}}]);
