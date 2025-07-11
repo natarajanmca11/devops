@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfacebook=self.webpackChunkfacebook||[]).push([[8494],{4262:function(e){e.exports=JSON.parse('{"name":"tools","permalink":"/devops/docs/tags/tools","docs":[{"id":"AI/reference","title":"AI Reference","description":"1. Persistent Storage","permalink":"/devops/docs/AI/ai-reference"}],"allTagsPath":"/devops/docs/tags"}')}}]);
