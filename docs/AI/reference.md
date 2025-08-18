@@ -3,7 +3,7 @@ slug: ai-reference
 title: AI Reference
 authors: [natarajan]
 tags: [ai, mcp, copilot, tools, adk]
-sidebar_position: 3
+sidebar_position: 10
 ---
 
 # References
