@@ -8,6 +8,13 @@ sidebar_position: 3
 
 # Sample Azure DevOps Pipeline
 
+## Azure DevOps Publishers
+1. [Falcon Architecture](https://marketplace.visualstudio.com/manage/publishers/FalconArchitecture)
+2. [Falcon DevOps](https://marketplace.visualstudio.com/manage/publishers/falcondevops)
+
+## Azure DevOps Extensions
+1. [Unified Pipelines]()
+
 ```yml 
 # Sample Task
 
@@ -33,12 +40,57 @@ sidebar_position: 3
 ```
 
 # Stages
-1. Before CI (Tag Creation - Build Version, Environment, )
-2. CI (Build)
-3. After CI (Security Scan, SAST, DAST)
-4. Before CD (Tag Creation - Deploy version, Environment)
-5. CD (Including Canary/Blue-Green Deployment)
-6. After CD (Smoke Tests, Health Checks, Load Testing, Functional/QA Testing, Tag Creation)
-7. Finally (Monitoring, Notifications, Reporting, Clean-up, Tag Creation - Status)
+Pipeline Stages
 
-# Tools
+### Prepare
+
+* Initialize pipeline-level properties (e.g., global metadata).
+* Set up shared resources (e.g., secrets vault, environment-specific parameters).
+* Perform environment sanity checks or prepare reports.
+
+### Before CI:
+
+* Tag creation for build versioning.
+* Environment setup for the build.
+
+### CI:
+
+* Build the application and generate necessary artifacts.
+
+
+### After CI:
+
+* Perform security scans (SAST, DAST).
+* Validate build artifacts (ensure versioning, integrity, completeness).
+
+### Before CD:
+
+* Tag creation for deployment versioning.
+* Setup the environment for deployment.
+* Integration testing for interactions between services, APIs, or databases.
+
+### CD:
+
+* Deployment execution, including advanced strategies (e.g., Canary, Blue-Green).
+
+### After CD:
+
+* Perform post-deployment validations:
+* Smoke tests
+* Health checks
+* Load testing
+* Functional/QA testing
+* Tag creation for version/status confirmation
+
+### Finally:
+
+* Monitoring and alerting for the deployment environment.
+* Notifications (email, messaging, etc.).
+* Reporting the deployment status.
+* Cleanup and final tag creation.
+
+# Refereces
+1. [Azure DevOps Extension Creation](https://learn.microsoft.com/en-us/azure/devops/extend/get-started/node?view=azure-devops)
+2. [Azure DevOps Extension Publish](https://learn.microsoft.com/en-us/azure/devops/extend/publish/overview?view=azure-devops)
+3. [Azure DevOps Extension Sharing](https://learn.microsoft.com/en-us/azure/devops/extend/publish/overview?view=azure-devops#share-your-extension)
+4. [Sample Extension](https://github.com/DataThirstLtd/databricks.vsts.tools)
