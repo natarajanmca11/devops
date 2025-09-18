@@ -22,4 +22,3 @@ sidebar_position: 3
 7. Finally (Monitoring, Notifications, Reporting, Clean-up)
 
 # Tools
-1. [Run Azure DevOps locally](https://github.com/microsoft/tfs-cli)
