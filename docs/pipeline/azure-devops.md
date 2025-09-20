@@ -9,8 +9,8 @@ sidebar_position: 3
 # Sample Azure DevOps Pipeline
 
 ## Azure DevOps Publishers
-1. [Falcon Architecture](https://marketplace.visualstudio.com/manage/publishers/FalconArchitecture)
-2. [Falcon DevOps](https://marketplace.visualstudio.com/manage/publishers/falcondevops)
+1. [Falcon DevOps*](https://marketplace.visualstudio.com/manage/publishers/falcondevops)
+2. [Falcon Architecture](https://marketplace.visualstudio.com/manage/publishers/FalconArchitecture)
 
 ## Azure DevOps Extensions
 1. [Unified Pipelines]()
